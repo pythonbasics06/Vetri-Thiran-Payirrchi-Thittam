@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Jewelry Planner · PocketSmart AI{% endblock %}
+{% block content %}
+<section class="page-head"><p class="eyebrow">STYLE MATCH</p><h1>Find jewelry within budget</h1><p>Optionally upload an outfit image for multimodal analysis.</p></section>
+<form id="jewelryForm" class="card planner-form" enctype="multipart/form-data">
+<div class="form-grid">
+<label>Budget (₹)<input type="number" name="budget" min="1" step="100" required></label>
+<label>Occasion<input name="occasion" value="Wedding" required></label>
+<label>Style<input name="style" value="Elegant"></label>
+<label>Outfit color<input name="outfit_color" placeholder="Blue, black, gold..."></label>
+<label>Material<input name="material" value="Any"></label>
+<label>Outfit image<input type="file" name="outfit_image" accept="image/png,image/jpeg,image/webp"></label>
+</div>
+<label>Additional notes<textarea name="notes" rows="4" placeholder="Neckline, preferred metal, statement/minimal, etc."></textarea></label>
+<button class="btn primary" type="submit">Generate Jewelry Plan</button>
+<div id="result" class="result"></div>
+</form>
+{% endblock %}
+{% block scripts %}<script src="/static/js/planners.js"></script>{% endblock %}

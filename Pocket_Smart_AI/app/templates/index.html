@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}PocketSmart AI{% endblock %}
+{% block content %}
+<section class="hero">
+  <div>
+    <p class="eyebrow">GENAI BUDGET ASSISTANT</p>
+    <h1>Plan smarter.<br><span>Spend with purpose.</span></h1>
+    <p class="lead">PocketSmart AI turns your budget and preferences into practical plans for home interiors, parties and jewelry.</p>
+    <div class="actions">
+      <a class="btn primary" href="/planner/home">Start a planner</a>
+      <a class="btn secondary" href="/register">Create account</a>
+    </div>
+  </div>
+  <div class="hero-card">
+    <div class="hero-icon">₹</div>
+    <h3>One budget. A complete plan.</h3>
+    <p>AI-assisted allocation, recommendations, trade-offs and shopping/service links.</p>
+  </div>
+</section>
+<section class="grid three">
+  <a class="card feature" href="/planner/home"><div class="icon">⌂</div><h2>Home Interior</h2><p>Rooms, style, furniture, lighting, decor and storage.</p></a>
+  <a class="card feature" href="/planner/party"><div class="icon">★</div><h2>Party Planner</h2><p>Guest count, food, venue, decoration and entertainment.</p></a>
+  <a class="card feature" href="/planner/jewelry"><div class="icon">◇</div><h2>Jewelry Planner</h2><p>Occasion, style, budget and optional outfit-image analysis.</p></a>
+</section>
+<section class="card info"><h2>How it works</h2><div class="steps"><div><b>1</b><span>Enter budget</span></div><div><b>2</b><span>Tell us what you need</span></div><div><b>3</b><span>Get an AI-assisted plan</span></div><div><b>4</b><span>Compare options before buying</span></div></div></section>
+{% endblock %}
